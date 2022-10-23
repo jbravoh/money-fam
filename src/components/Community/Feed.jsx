@@ -1,17 +1,19 @@
 import posts from "../../fixtures/posts.json";
 import React from "react";
 import PostContainer from "./PostContainer";
+import { createExtract } from "../../utils";
 
 const Feed = () => {
   const mostPopular = posts.reduce((prev, current) => {
     return prev.num_likes > current.num_likes ? prev : current;
   });
 
-  // const popularExtract = mostPopular.content.slice(0, 100) + "...";
 
-  const popularExtract = mostPopular.content.slice(0, 100) + "...";
 
-  console.log(popularExtract)
+
+  const popularExtract = createExtract(mostPopular)
+
+
   
   
 
@@ -27,7 +29,7 @@ const Feed = () => {
       <hr style={{margin: "30px 0 20px", colour: "light-grey"}}/>
       <h2 style={{margin: "20px 0"}}>All Posts</h2>
       {posts.map((post) => {
-        const extract = post.content.slice(0, 100) + "...";
+        const extract = createExtract(post)
         return (
           <div key={post.id}>
             <PostContainer

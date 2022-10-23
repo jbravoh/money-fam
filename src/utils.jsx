@@ -15,3 +15,13 @@ export const formatTopics = (topic) => {
       return;
     }
   };
+
+
+  export const createExtract = (post) => {
+    const postLength = post.content.split(' ').length
+  
+    if (postLength > 50 ) {
+    return post.content.split(' ').slice(0, 50).join(' ') + "..."
+    }
+    return post.content
+  }
