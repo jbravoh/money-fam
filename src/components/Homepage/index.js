@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
-import { makeStyles, Button, Container } from "@material-ui/core";
-import "./Homepage.module.css";
+import { makeStyles, Container } from "@material-ui/core";
+import "../../styles/Landing.css";
 
 const useStyles = makeStyles((theme) => {
   return {
+    container: {
+      height: "100%",
+      width: "100v%",
+      backgroundColor: "#185d45ff",
+      margin: 0,
+    },
     title: {
       color: "#fff",
       fontSize: "60px",
@@ -23,10 +29,15 @@ const useStyles = makeStyles((theme) => {
       margin: "0 auto",
       display: "block",
       textDecoration: "none",
+      padding: "5px",
+      borderRadius: "8px",
+    },
+    buttonText: {
+      fontsSize: "2rem",
     },
     hover: {
       "&:hover": {
-        backgroundColor: "pink",
+        backgroundColor: "#fff",
       },
     },
   };
@@ -36,7 +47,7 @@ const Homepage = () => {
   const classes = useStyles();
 
   return (
-    <Container>
+    <Container className={classes.container}>
       <h1 className={classes.title}>MoneyFam</h1>
       <h2 className={classes.slogan}>
         a financial community you can relate to.
@@ -48,7 +59,7 @@ const Homepage = () => {
       {/* <Box justifyContent="center"> */}
       <Link to="/chatbot" style={{ textDecoration: "none" }} hover>
         <button hover className={classes.button}>
-          Let's get started!
+          <p className={classes.buttonText}>Let's get started!</p>
         </button>
       </Link>
       {/* </Box> */}

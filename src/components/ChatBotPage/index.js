@@ -7,12 +7,11 @@ const useStyles = makeStyles((theme) => {
   return {
     chatbot: {
       margin: "0 auto",
-      // transform: "scale(0.9)",
       borderRadius: "10px",
       borderStyle: "none",
       boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
       width: "300px",
-      height: "550px",
+      minHeight: "600px",
       display: "block",
     },
     chatbotContainer: {

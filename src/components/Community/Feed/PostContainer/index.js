@@ -9,16 +9,21 @@ const useStyles = makeStyles((theme) => {
       padding: "10px",
       marginBottom: "10px;",
     },
+    title: {
+      fontSize: "1.2rem",
+      marginBottom: "5px",
+    },
   };
 });
 
-const PostContainer = ({ title, extract }) => {
+const PostContainer = ({ title, extract,  }) => {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <h1>{title}</h1>
+      <h1 className={classes.title}>{title}</h1>
+      <p>{extract}</p>
       <div>
-        <p>{extract}</p>
+        <p></p>
       </div>
     </div>
   );
