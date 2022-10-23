@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core";
 import { formatTopics } from "../../utils";
 import heartFilled from "../../icons/heart-filled.svg"
 import heartEmpty from "../../icons/heart-empty.svg"
+import comment from "../../icons/comment.svg"
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => {
     title: {
       fontSize: "1.2rem",
       marginBottom: "5px",
+      color: "#185d45ff",
     },
     topicContainer: {
       border: "solid 1px black",
@@ -33,10 +35,15 @@ const useStyles = makeStyles((theme) => {
       marginTop: "10px",
     }, 
     comments: {
+      marginRight: "10px",
+      width: "18px",
+      height: "18px",
 
     },
     likes: {
-      alignItem: "end"
+      alignItem: "end",
+      width: "18px",
+      height: "18px"
     }
 
   };
@@ -47,7 +54,7 @@ const PostContainer = ({ title, extract, topic }) => {
   const classes = useStyles();
 
   const handleLikeButtonClick = () => {
-    setLiked(true)
+    setLiked(!liked)
 
   }
   
@@ -60,8 +67,8 @@ const PostContainer = ({ title, extract, topic }) => {
         <p>{formatTopics(topic)}</p>
       </div> }
       <div>
-        <img className={classes.comments} alt="comments" />
-        {liked ?  (<img className={classes.likes} src={heartFilled} alt="likes" onClick={handleLikeButtonClick}/>) : (  <img className={classes.likes} src={heartEmpty} alt="likes" />)}
+        <img className={classes.comments} alt="comments" src={comment} />
+        {liked ?  (<img className={classes.likes} src={heartFilled} alt="likes" onClick={handleLikeButtonClick}/>) : (  <img className={classes.likes} src={heartEmpty} alt="likes" onClick={handleLikeButtonClick} />)}
       
       </div>
       </div>

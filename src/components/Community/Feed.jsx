@@ -19,7 +19,7 @@ const Feed = () => {
 
   return (
     <>
-      {/* <Container maxWidth="sm"> */}
+     <p style={{marginTop: "20px"}}>Based on your responses, here are some posts in the community of people facing similar issues. </p>
       <h2 style={{margin: "20px 0"}}>Most popular post</h2>
       <PostContainer
         title={mostPopular.title ? mostPopular.title : mostPopular.question}

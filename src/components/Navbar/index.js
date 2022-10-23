@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-// import Logo from "../../Logo.svg";
+
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => {
@@ -15,10 +15,16 @@ const useStyles = makeStyles((theme) => {
     },
     logo: {
       display: "inline-block",
+      textDecoration: "none;",
     },
     button: {
       fontSize: "16px",
-      padding: "5px",
+      padding: "8px",
+      backgroundColor: "#185d45ff",
+      color: "white;",
+      cursor: "pointer",
+      borderStyle: "none",
+      borderRadius: "5px",
     },
   };
 });

@@ -1,5 +1,4 @@
 import Iframe from "react-iframe";
-import { Link } from "react-router-dom";
 import { Container, makeStyles } from "@material-ui/core";
 import NavBar from "../Navbar";
 
@@ -10,7 +9,7 @@ const useStyles = makeStyles(() => {
       borderRadius: "10px",
       borderStyle: "none",
       boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
-      width: "315px",
+      width: "350px",
       height: "550px",
       display: "block",
     },
@@ -21,12 +20,12 @@ const useStyles = makeStyles(() => {
   };
 });
 
-const ChatBotPage = () => {
+const ChatbotPage = () => {
   const classes = useStyles();
   return (
     <>
       <NavBar />
-      <Container>
+      <Container maxWidth="sm">
         <div className={classes.chatbotContainer}>
           <Iframe
             url="https://landbot.online/v3/H-1399300-PS53KTE2XA2WIUKJ/index.html"
@@ -38,4 +37,4 @@ const ChatBotPage = () => {
   );
 };
 
-export default ChatBotPage;
+export default ChatbotPage;

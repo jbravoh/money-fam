@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import Feed from "./Feed";
-import Topics from "./Topics";
 import Navbar from "../Navbar";
 
 const Community = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+
 
   return (
     <>
       <Navbar />
+      <Feed />
   
-      <div>
+      {/* <div>
         <button
           onClick={() => {
             setSelectedIndex(0);
@@ -27,8 +26,8 @@ const Community = () => {
           <p>Topic</p>
         </button>
         {selectedIndex === 0 && <Feed />}
-        {selectedIndex === 1 && <Topics />}
-      </div>
+        {selectedIndex === 1 && <Topics />} */}
+      {/* </div> */}
     </>
   );
 };

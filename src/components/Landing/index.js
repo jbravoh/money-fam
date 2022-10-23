@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import { makeStyles, Container, Button } from "@material-ui/core";
+import { makeStyles, Container } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => {
   return {
     container: {
-      // height: "100%",
-      // width: "100%",
       position: "fixed",
       top: 0,
       left: 0,
@@ -38,9 +36,15 @@ const useStyles = makeStyles((theme) => {
       margin: "0 auto",
       display: "block",
       textDecoration: "none",
-      padding: "10px",
+      padding: "12px",
       borderRadius: "8px",
       marginTop: "100px",
+      fontWeight: 900,
+      fontSize: "1.6rem",
+
+      color: "#185d45ff;",
+      cursor: "pointer",
+      borderStyle: "none",
     },
     buttonText: {
       fontsSize: "3rem",
@@ -66,10 +70,9 @@ const Landing = () => {
         
       </p> */}
       <Link to="/chatbot" style={{ textDecoration: "none" }} hover>
-        <Button hover className={classes.button}>
+        <button hover className={classes.button}>
           Let's get started!
-          {/* <p className={classes.buttonText}>Let's get started!</p> */}
-        </Button>
+        </button>
       </Link>
       {/* </Box> */}
     </Container>
