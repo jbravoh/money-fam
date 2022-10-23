@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => {
       borderRadius: "10px",
       borderStyle: "none",
       boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
-      width: "350px",
+      width: "380px",
       height: "550px",
       display: "block",
     },
