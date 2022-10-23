@@ -1,6 +1,6 @@
 import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ChatbotPage from "./components/ChatbotPage";
+import ChatbotPage from "./components/ChatbotPage/index";
 import Landing from "./components/Landing";
 import Community from "./components/Community";
 import { Container } from "@material-ui/core";
