@@ -1,11 +1,26 @@
-import './App.css';
-import MoneyBot from './MoneyBot';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ChatBotPage from "./components/ChatBotPage";
+import Homepage from "./components/Homepage";
+import Community from "./components/Community";
+import { Container } from "@material-ui/core";
+
+// import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className='App'>
-      <MoneyBot />
-    </div>
+    <>
+      <Container maxWidth="sm">
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Homepage />} />
+            {/* <Navbar /> */}
+            <Route path="chatbot" element={<ChatBotPage />} />
+            <Route path="community" element={<Community />} />
+          </Routes>
+        </Router>
+      </Container>
+    </>
   );
 }
 
