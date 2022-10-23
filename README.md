@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# MoneyFam
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Submission for Athena Hack October 2022: an online community for financial support.
 
-## Available Scripts
+- PWA designed for mobile 
+- Written in React, deployed with Vercel
+- Chatbot designed with [Landbot](https://landbot.io/)
 
-In the project directory, you can run:
+## Usage
 
-### `yarn start`
+To start the app locally, run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+yarn # to install dependencies
+yarn start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To access online, visit https://money-fam.vercel.app/
 
-### `yarn test`
+## Motivation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### The problem
 
-### `yarn build`
+Brits are bad at talking money. Shame, upbringing and burdening others means 29 million UK adults don't feel comfortable talking about finances, despite feeling worried about them.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### The solution
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+MoneyFam is an online community where members share their concerns anonymously. They can give each other tips and support, and receive advice from respected community members, particularly those who are MoneyFam certified (fiduciaries only, subject to financial regulations).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### The journey
 
-### `yarn eject`
+When users sign up, they enter a dialogue about their finances. They are asked about their situation in a non-judgemental manner and offered suggestions on how to move to the next level. They are directed to a 'topic' where other community members are discussing these suggestions, so that they feel included and supported, no matter the state of their bank account.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+As users progress, they can go through the dialogue again and advance to the next level. In the meantime, they are free to browse all topics, to see what people are discussing all over the country.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Financial suggestions are based on the [UK Personal Finance Flowchart](https://ukpersonal.finance/flowchart/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### The future...
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+MoneyFam is a scalable solution to the UK's money taboo. There are many ways to expand its reach and impact, here are just a few:
+- Get financial advisers on board (specifically fiduciaries, so that we maintain positive incentives all-round) for a revenue stream from referrals
+- Replace the flowchart chatbot with a transformer-based NLP model, that can analyse natural language responses to identify a user's level
+- Expand to other countries by replacing the static chatbot content with region-specific suggestions
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let's get talking!
