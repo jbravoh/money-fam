@@ -10,9 +10,7 @@ const Community = () => {
   return (
     <>
       <Navbar />
-      <Link to="/chatbot">
-        <button>Chatbot</button>
-      </Link>
+  
       <div>
         <button
           onClick={() => {

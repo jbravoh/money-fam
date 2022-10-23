@@ -1,7 +1,7 @@
 import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ChatBotPage from "./components/ChatBotPage";
-import Homepage from "./components/Homepage";
+import Landing from "./components/Landing";
 import Community from "./components/Community";
 import { Container } from "@material-ui/core";
 
@@ -13,7 +13,7 @@ function App() {
       <Container maxWidth="sm">
         <Router>
           <Routes>
-            <Route exact path="/" element={<Homepage />} />
+            <Route exact path="/" element={<Landing />} />
             {/* <Navbar /> */}
             <Route path="chatbot" element={<ChatBotPage />} />
             <Route path="community" element={<Community />} />
